@@ -32,6 +32,11 @@ h2 {
   z-index: -1;
 }
 
+.ti.ti-user-card::before {
+  -webkit-mask-image: url("../assets/user-card.svg");
+          mask-image: url("../assets/user-card.svg");
+}
+
 a[richie] {
   position: relative;
   text-decoration: none;
@@ -615,23 +620,6 @@ form input[type="submit"][isSearching="true"] {
   margin-bottom: 10px;
 }
 
-.popUp .card textarea {
-  width: 100%;
-  padding: 0;
-  font: inherit;
-  border: none;
-  resize: none;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.popUp .card textarea:focus {
-  opacity: 1;
-}
-
 .popUp .card .filter {
   display: block;
   max-height: 20px;
@@ -665,6 +653,23 @@ form input[type="submit"][isSearching="true"] {
 
 .popUp .card .buttons .iconButton i {
   margin-right: 24px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0;
+  font: inherit;
+  border: none;
+  resize: none;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+textarea:focus {
+  opacity: 1;
 }
 
 .grid {
@@ -1144,7 +1149,7 @@ form input[type="submit"][isSearching="true"] {
 .stat * {
   display: inline-block;
   width: 100%;
-  margin: 0;
+  margin: 0 !important;
   text-align: center;
 }
 
@@ -1160,10 +1165,18 @@ form input[type="submit"][isSearching="true"] {
   font-size: 50px;
 }
 
-.stat .number {
+.stat .number,
+.stat .text {
   color: #0088ff;
-  font-weight: 800;
   font-size: 1.6em;
+}
+
+.stat .number {
+  font-weight: 800;
+}
+
+.stat .text {
+  font-weight: 600;
 }
 
 .anchor {
