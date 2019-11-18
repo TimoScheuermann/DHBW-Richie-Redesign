@@ -13,6 +13,13 @@
   </head>
   <body>
     <nav>
+      <div class="menu" onclick="toggleNav()">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <div class="title">DHBW Richie</div>
       <div class="links">
         <a href="">Home</a>
@@ -112,18 +119,18 @@
 </html>
 
 <script>
-  let night = false;
-  function swap() {
-    night = !night;
+  let open = true;
+  function toggleNav() {
+    open = !open;
 
-    let elements = document.querySelectorAll("html,.paragraph,.seperator");
-    elements.forEach(element => {
-      console.log(element);
-      if (night) {
-        element.classList.add("night");
-      } else {
-        element.classList.remove("night");
-      }
-    });
+    document
+      .getElementsByClassName("menu")[0]
+      .setAttribute("active", (!open).toString());
+
+    if (open) {
+      document.getElementsByClassName("links")[0].classList.remove("open");
+    } else {
+      document.getElementsByClassName("links")[0].classList.add("open");
+    }
   }
 </script>

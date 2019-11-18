@@ -12,8 +12,6 @@
     />
   </head>
   <body>
-    <div class="background" style="height: 150px"></div>
-
     <nav>
       <div class="title">DHBW Richie</div>
       <div class="links">
@@ -34,14 +32,14 @@
       </div>
     </nav>
 
-    <div class="searchBar" style="top: 100px">
+    <div class="background"></div>
+    <div class="searchBar">
       <form method="GET">
         <input type="text" placeholder="Was möchtest du wissen?" />
         <input type="submit" value="" />
       </form>
     </div>
-
-    <div style="height: 100px"></div>
+    <div class="background-spacer"></div>
 
     <div class="seperator specialSeperator">
       <h2>Filter</h2>
@@ -183,3 +181,16 @@
     </div>
   </body>
 </html>
+
+<style>
+  @media screen and (max-height: 399px) {
+    .searchBar {
+      top: 85px;
+    }
+  }
+  @media screen and (min-height: 400px) {
+    .searchBar {
+      top: 100px;
+    }
+  }
+</style>

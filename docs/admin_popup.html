@@ -32,10 +32,9 @@
       </div>
     </nav>
 
-    <div class="background" style="height: 150px"></div>
-
+    <div class="background"></div>
     <div class="blurTitle">Administration</div>
-    <div style="height: 100px"></div>
+    <div class="background-spacer"></div>
 
     <div class="seperator specialSeperator">
       <h2>Verwaltung & Management</h2>
@@ -235,8 +234,16 @@
     border: 1px solid rgba(17, 17, 17, 0.4);
     height: 30px;
   }
-  .grid-popup {
-    grid-template-columns: 1fr 4fr 1fr;
+
+  @media only screen and (max-width: 849px) {
+    .grid-popup {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (min-width: 850px) {
+    .grid-popup {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
   }
 
   .usercard {

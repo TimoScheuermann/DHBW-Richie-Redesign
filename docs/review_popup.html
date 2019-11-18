@@ -12,8 +12,6 @@
     />
   </head>
   <body>
-    <div class="background" style="height: 150px"></div>
-
     <nav>
       <div class="title">DHBW Richie</div>
       <div class="links">
@@ -34,8 +32,9 @@
       </div>
     </nav>
 
+    <div class="background"></div>
     <div class="blurTitle">Review</div>
-    <div style="height: 100px"></div>
+    <div class="background-spacer"></div>
 
     <div class="seperator specialSeperator">
       <h2>Übersicht</h2>
@@ -148,7 +147,7 @@
       </div>
     </div>
 
-    <div class="popUp">
+    <div class="popUp closed">
       <div class="card">
         <div class="close"></div>
         <h1>Frage & Antwort bearbeiten</h1>
@@ -186,3 +185,17 @@
     </div>
   </body>
 </html>
+
+<script>
+  let visible = false;
+  function togglePopUp() {
+    visible = !visible;
+    document
+      .getElementsByClassName("popUp")[0]
+      .setAttribute("class", "popUp " + (visible ? "opened" : "closed"));
+  }
+  togglePopUp();
+  setInterval(() => {
+    togglePopUp();
+  }, 2500);
+</script>

@@ -12,8 +12,6 @@
     />
   </head>
   <body>
-    <div class="background" style="height: 150px"></div>
-
     <nav>
       <div class="title">DHBW Richie</div>
       <div class="links">
@@ -34,8 +32,9 @@
       </div>
     </nav>
 
+    <div class="background"></div>
     <div class="blurTitle">Einstellungen</div>
-    <div style="height: 100px"></div>
+    <div class="background-spacer"></div>
 
     <div class="seperator specialSeperator">
       <h2>Guten Tag, Max Mustermann</h2>
@@ -129,5 +128,15 @@
   }
   .close {
     top: 15px;
+  }
+  @media only screen and (max-width: 849px) {
+    .seperator {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 10px;
+    }
+    .seperator div {
+      white-space: nowrap;
+    }
   }
 </style>
