@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574174467052,
+  "timestamp": 1574175158850,
   "index": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
   "assetGroups": [
     {
@@ -69,12 +69,12 @@
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png": "31121ebf02ba6923587a4fa66797607e42b4c88d",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg": "30bc44986c2777489e2f273311a9402ab77cd08a",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "1c60e59e90e8a0f642e5a4cddf2eb69ba5757a72",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "52724f18296122dcbaf31951a8887b9872aecce0",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.648b7bcb23f6b5c73ef8.js": "78bc8b47360f31ec506ea7cd2e64b4282c67af3d",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.648b7bcb23f6b5c73ef8.js": "2471bb03cf128f3fb964efce75b8d4a460d9c04c",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.8e1a735da52928c4b345.css": "3d96cb9c9a4bbdc36e2a21e7a146dc392f2ad177",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "c02e0a386683533836246e15b11194a0cef49325",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "dea0c02706d2d089961f6c08c209a3b6dbc80dea",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js": "45c51483238468881240579c3fdecd19144cff17",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
