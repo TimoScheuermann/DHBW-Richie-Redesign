@@ -1,9 +1,9 @@
 {
   "name": "DHBW Richie",
-  "short_name": "Richie",
+  "short_name": "DHBW Richie",
   "theme_color": "#f0f0f0",
   "background_color": "#111111",
-  "display": "fullscreen",
+  "display": "standalone",
   "Scope": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/",
   "start_url": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/",
 
