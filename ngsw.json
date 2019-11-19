@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "timestamp": 1574174467052,
+  "index": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.648b7bcb23f6b5c73ef8.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.648b7bcb23f6b5c73ef8.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.8e1a735da52928c4b345.css",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.8e1a735da52928c4b345.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-128x128.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-144x144.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-152x152.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-192x192.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-384x384.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-512x512.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-72x72.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-96x96.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/landing.jpg",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/user-card.9536648b496fcdd19583.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "\\/api"
+      ],
+      "strategy": "freshness",
+      "maxSize": 0,
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-128x128.png": "b8ad3018912c95fb734081996f7475c996ec395b",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-144x144.png": "a09fb62ae614b39140b97f9a6a1ec550fdf4421c",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-152x152.png": "e181d701d60a410212e2f1cae79a95837ea0efa1",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-192x192.png": "7820eab4ae5bf4862c642270f62acde10a56a1f3",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-384x384.png": "2fad3287239d7606e651a4584bb124816ddc3e20",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-512x512.png": "54556e43a472a6ff7894fe854e02a25bedc40294",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-72x72.png": "172bfeef466ba41468a11776720a7e362c140fb6",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-96x96.png": "bc1bb0793646e469aead011d0e820b1e8e68b3df",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/landing.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png": "31121ebf02ba6923587a4fa66797607e42b4c88d",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg": "30bc44986c2777489e2f273311a9402ab77cd08a",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "1c60e59e90e8a0f642e5a4cddf2eb69ba5757a72",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.648b7bcb23f6b5c73ef8.js": "78bc8b47360f31ec506ea7cd2e64b4282c67af3d",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.648b7bcb23f6b5c73ef8.js": "2471bb03cf128f3fb964efce75b8d4a460d9c04c",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.8e1a735da52928c4b345.css": "3d96cb9c9a4bbdc36e2a21e7a146dc392f2ad177",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "c02e0a386683533836246e15b11194a0cef49325",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js": "45c51483238468881240579c3fdecd19144cff17",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.8e1a735da52928c4b345.css": "3d96cb9c9a4bbdc36e2a21e7a146dc392f2ad177",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/user-card.9536648b496fcdd19583.svg": "30bc44986c2777489e2f273311a9402ab77cd08a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
