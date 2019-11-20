@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574176281243,
+  "timestamp": 1574209100582,
   "index": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
   "assetGroups": [
     {
@@ -10,15 +10,15 @@
       "urls": [
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.648b7bcb23f6b5c73ef8.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.648b7bcb23f6b5c73ef8.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.8e1a735da52928c4b345.css",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.1e92ccbf2216b54ea819.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.1e92ccbf2216b54ea819.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.61298fc82891ee3aa583.css",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.8e1a735da52928c4b345.css"
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.61298fc82891ee3aa583.css"
       ],
       "patterns": []
     },
@@ -69,17 +69,17 @@
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png": "31121ebf02ba6923587a4fa66797607e42b4c88d",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg": "30bc44986c2777489e2f273311a9402ab77cd08a",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "88dc69458c3f06175c814c79e37c770866d28314",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "95521892029ab6b1fa7d855867eae0e7be0216ce",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.648b7bcb23f6b5c73ef8.js": "78bc8b47360f31ec506ea7cd2e64b4282c67af3d",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.648b7bcb23f6b5c73ef8.js": "2471bb03cf128f3fb964efce75b8d4a460d9c04c",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.8e1a735da52928c4b345.css": "3d96cb9c9a4bbdc36e2a21e7a146dc392f2ad177",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.1e92ccbf2216b54ea819.js": "f7f2e344bc7a1f83d3a88fdf664a0747d6d93daa",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.1e92ccbf2216b54ea819.js": "87c66aa1f75a3e8428a825f40e12e6743490deb8",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.61298fc82891ee3aa583.css": "36c8cd19783205fce5ba86c2c69fa06deaecdc0f",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "cfdfcd1fcbf8cc4966764e4fb6fa0509c0f14144",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js": "45c51483238468881240579c3fdecd19144cff17",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.8e1a735da52928c4b345.css": "3d96cb9c9a4bbdc36e2a21e7a146dc392f2ad177",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.61298fc82891ee3aa583.css": "36c8cd19783205fce5ba86c2c69fa06deaecdc0f",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/user-card.9536648b496fcdd19583.svg": "30bc44986c2777489e2f273311a9402ab77cd08a"
   },
   "navigationUrls": [
