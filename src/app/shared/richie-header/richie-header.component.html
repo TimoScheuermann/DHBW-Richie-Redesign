@@ -1,0 +1,28 @@
+<nav [class.opened]="isNavVisible">
+  <div class="menu" (click)="toggleNav()"><i class="ti ti-arrow"></i>Menü</div>
+  <div class="title">DHBW Richie</div>
+  <div class="links">
+    <i class="ti ti-home"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/home']">Home</a>
+    <i class="ti ti-add"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/add']">Add</a>
+    <i class="ti ti-review"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/review']">Review</a>
+    <i class="ti ti-search"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/search']">Suche</a>
+    <i class="ti ti-telegram"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/telegram']">Telegram</a>
+    <i class="ti ti-admin"></i
+    ><a [routerLinkActive]="'active'" [routerLink]="['/admin']"
+      >Administration</a
+    >
+  </div>
+  <div [routerLink]="['/settings']" class="user">
+    <div class="name">Max Mustermann</div>
+    <div class="icon">
+      <img
+        src="https://lh3.googleusercontent.com/a-/AAuE7mBDONAFGTYCJsPYOXfRPeBdOtFg6JxRlnGo12wlEA"
+      />
+    </div>
+  </div>
+</nav>

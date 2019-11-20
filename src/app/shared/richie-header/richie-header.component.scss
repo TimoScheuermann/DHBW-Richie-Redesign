@@ -1,0 +1,238 @@
+@import "../../scss/variables";
+
+@media only screen and (min-width: 850px) {
+  nav {
+    .menu {
+      display: none;
+    }
+    .title {
+      margin-left: 10px;
+    }
+    .links {
+      .active {
+        opacity: 1;
+        box-shadow: inset 0px -3px 0px $blue;
+      }
+
+      * {
+        text-decoration: none;
+        padding: 0px 10px;
+        font-weight: 500;
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+
+        &:nth-child(ODD) {
+          display: none;
+        }
+
+        opacity: 0.8;
+        transition: 0.2s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+    .user {
+      .icon {
+        padding-top: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 849px) {
+  nav {
+    &.opened {
+      .menu {
+        i {
+          transform: rotate(90deg);
+          margin-right: 5px;
+        }
+      }
+      .links {
+        transform: translateX(0vw);
+      }
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $blue;
+      i {
+        color: $blue;
+        margin-left: 10px;
+        transform: rotate(180deg);
+        transition: 0.2s ease;
+      }
+    }
+    .title {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .links {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      transform: translateX(-100vw);
+      transition: transform 0.5s ease-in-out;
+      padding-left: calc(20px + var(--safe-area-inset-left));
+      padding-right: calc(20px + var(--safe-area-inset-right));
+      padding-top: calc(
+        50px + var(--safe-area-inset-top) + var(--safe-area-inset-bottom)
+      );
+      z-index: 101;
+      background: #000;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      grid-template-rows: repeat(20, 40px);
+      grid-gap: 0;
+      * {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:nth-child(ODD) {
+          font-size: 1.2em;
+          text-align: center;
+          top: 9px;
+        }
+        &:nth-child(EVEN) {
+          padding-left: 5px;
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+    .user {
+      .name {
+        display: none;
+      }
+    }
+  }
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  width: calc(
+    100vw - var(--safe-area-inset-right) - var(--safe-area-inset-left)
+  );
+  position: fixed;
+  top: 0;
+  font-size: 16px;
+
+  padding: var(--safe-area-inset-top) var(--safe-area-inset-right) 0
+    var(--safe-area-inset-left);
+
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  * {
+    display: inline-flex;
+    color: #fff;
+  }
+
+  .title {
+    font-weight: 800;
+    z-index: 102;
+  }
+
+  .user {
+    cursor: pointer;
+
+    &:hover {
+      .name {
+        opacity: 1;
+      }
+    }
+
+    .name {
+      line-height: 50px;
+      margin-right: 10px;
+      font-weight: 500;
+      opacity: 0.8;
+      transition: 0.2s ease;
+    }
+    .icon {
+      padding-right: 5px;
+      img {
+        height: 40px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+.menu {
+  z-index: 102;
+  &[active="true"] {
+    .hamburger {
+      span {
+        &:nth-child(1) {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:nth-child(2) {
+          width: 0px;
+        }
+        &:nth-child(3) {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 17px;
+    margin: calc((40px - 17px) / 2) calc((40px - 20px) / 2);
+
+    span {
+      transition: 0.2s ease;
+
+      position: absolute;
+      height: 2px;
+      border-radius: 20px;
+      width: 20px;
+      background: #fff;
+
+      &:nth-child(1) {
+        top: 2px;
+        left: 0%;
+        transform: translateY(-50%);
+      }
+      &:nth-child(2) {
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+      }
+      &:nth-child(3) {
+        top: calc(100% - 2px);
+        left: 0%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

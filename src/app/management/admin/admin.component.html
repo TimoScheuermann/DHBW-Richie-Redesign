@@ -1,0 +1,130 @@
+<div class="background"></div>
+<div class="blurTitle">Administration</div>
+<div class="background-spacer"></div>
+
+<div class="seperator specialSeperator">
+  <h2>Verwaltung & Management</h2>
+  <div>
+    <a richie [routerLink]="['./']" fragment="stats"
+      ><i class="ti ti-rating"></i>Statistik</a
+    >
+    <a richie [routerLink]="['./']" fragment="search"
+      ><i class="ti ti-search"></i>Benutzersuche</a
+    >
+    <a richie [routerLink]="['./']" fragment="admins"
+      ><i class="ti ti-users"></i>Admins</a
+    >
+    <a richie [routerLink]="['./']" fragment="revs"
+      ><i class="ti ti-review"></i>Reviewer</a
+    >
+  </div>
+</div>
+
+<div class="anchor" id="stats"></div>
+<div class="paragraph">
+  <h2>Statistik</h2>
+  <div class="grid grid-1-1-1-1">
+    <div class="stat">
+      <p>Registrierte Benutzer</p>
+      <div class="icon"><i class="ti ti-users"></i></div>
+      <div class="number">10</div>
+    </div>
+    <div class="stat">
+      <p>Fragen eingereicht</p>
+      <div class="icon"><i class="ti ti-book"></i></div>
+      <div class="number">234</div>
+    </div>
+    <div class="stat">
+      <p>Fragen gestellt</p>
+      <div class="icon"><i class="ti ti-questionmark"></i></div>
+      <div class="number">45902</div>
+    </div>
+    <div class="stat">
+      <p>Telegram Channel</p>
+      <div class="icon"><i class="ti ti-telegram"></i></div>
+      <div class="number">5</div>
+    </div>
+  </div>
+</div>
+
+<div class="anchor" id="search"></div>
+<div class="paragraph">
+  <h2>Benutzersuche</h2>
+
+  <div class="bar">
+    <form method="GET">
+      <input type="text" placeholder="Benutzer" />
+      <input type="submit" value="" />
+    </form>
+  </div>
+
+  <div class="tableWrapper">
+    <table>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-active green"></i></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Admin</td>
+        <td><i class="ti ti-user-inactive red"></i></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="anchor" id="admins"></div>
+<div class="paragraph">
+  <h2>Administratoren</h2>
+  <div class="close" active="false"></div>
+</div>
+
+<div class="anchor" id="revs"></div>
+<div class="paragraph">
+  <h2>Reviewer</h2>
+  <div class="close"></div>
+  <div class="tableWrapper">
+    <table>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-active green"></i></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-active green"></i></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-inactive red"></i></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-active green"></i></td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>Mustermann</td>
+        <td>max.mustermann@mail.com</td>
+        <td>Reviewer</td>
+        <td><i class="ti ti-user-active green"></i></td>
+      </tr>
+    </table>
+  </div>
+</div>

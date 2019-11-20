@@ -1,0 +1,39 @@
+<div class="background"></div>
+<div class="blurTitle">Frage einreichen</div>
+<div class="background-spacer"></div>
+
+<div class="seperator specialSeperator">
+  <h2>Formular</h2>
+</div>
+
+<div class="paragraph">
+  <h2>Frage</h2>
+  <textarea
+    [(ngModel)]="question.question"
+    placeholder="Beispiel: Was ist die Antwort auf alles?"
+    rows="5"
+  ></textarea>
+  <h2>Antwort</h2>
+  <textarea
+    [(ngModel)]="question.answer"
+    placeholder="Beispiel: 42"
+    rows="5"
+  ></textarea>
+
+  <div class="grid grid-3-1">
+    <div>
+      <h2>Quelle</h2>
+      <textarea
+        [(ngModel)]="question.source"
+        placeholder="Vorlesungs Skript"
+        rows="1"
+      ></textarea>
+    </div>
+
+    <div>
+      <h2>Vorlesung</h2>
+      <div class="filter">Vorlesung<i class="ti ti-list"></i></div>
+    </div>
+  </div>
+  <div class="iconButton"><i class="ti ti-reply"></i>Frage einreichen</div>
+</div>

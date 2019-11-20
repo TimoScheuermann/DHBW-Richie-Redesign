@@ -1,0 +1,27 @@
+.close {
+  top: 15px;
+}
+td {
+  i {
+    font-size: 1.7em;
+    top: -12px;
+  }
+}
+form {
+  font-size: 0.8em !important;
+  input {
+    color: var(--color);
+    margin-bottom: 0 !important;
+    height: 30px !important;
+    &[type="submit"] {
+      margin-top: 0px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+.bar {
+  border-radius: 100px;
+  border: 1px solid rgba(var(--color-rgb), 0.4);
+  height: 30px;
+}

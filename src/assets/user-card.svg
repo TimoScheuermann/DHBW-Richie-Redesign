@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-user-card">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="user-card" clip-path="url(#clip-user-card)">
+    <path id="Differenzmenge_11" data-name="Differenzmenge 11" d="M-75-869h-90a5.006,5.006,0,0,1-5-5v-53a5.006,5.006,0,0,1,5-5h90a5.006,5.006,0,0,1,5,5v53A5.005,5.005,0,0,1-75-869Zm-34-23a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1h30a1,1,0,0,0,1-1v-2a1,1,0,0,0-1-1Zm0-9a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1h30a1,1,0,0,0,1-1v-2a1,1,0,0,0-1-1Zm0-9a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1h30a1,1,0,0,0,1-1v-2a1,1,0,0,0-1-1Z" transform="translate(170 951)" fill="rgba(0,0,0,0.66)"/>
+    <g id="user" transform="translate(-9.938 18.875)">
+      <path id="Pfad_17" data-name="Pfad 17" d="M187.409,814.95c7.273,1.505,21.818,1.505,29.091,0,2.764-.572,2.46-1.806,2.46-1.806s-.957-3.048-2.46-4.215c-2.424-1.882-8.727-1.2-8.727-1.2a21.91,21.91,0,0,1-5.818,1.2,21.91,21.91,0,0,1-5.818-1.2s-6.3-.677-8.727,1.2c-1.486,1.154-2.42,4.215-2.42,4.215S184.595,814.368,187.409,814.95Z" transform="translate(-166.033 -764.954)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="10.861" cy="10.861" r="10.861" transform="translate(25.055 17.125)"/>
+    </g>
+    <path id="Rechteck_71" data-name="Rechteck 71" d="M5,0H95a5,5,0,0,1,5,5v5a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(0 19)" fill="#fff"/>
+  </g>
+</svg>

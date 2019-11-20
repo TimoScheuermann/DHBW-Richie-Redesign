@@ -1,0 +1,43 @@
+<nav>
+  <div class="menu" onclick="toggleNav()">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="title">DHBW Richie</div>
+  <div class="links">
+    <a href="">Home</a>
+    <a href="">Add</a>
+    <a href="">Review</a>
+    <a href="" class="active">Suche</a>
+    <a href="">Telegram</a>
+    <a href="">Administration</a>
+  </div>
+  <div class="user">
+    <div class="name">Max Mustermann</div>
+    <div class="icon">
+      <img
+        src="https://lh3.googleusercontent.com/a-/AAuE7mBDONAFGTYCJsPYOXfRPeBdOtFg6JxRlnGo12wlEA"
+      />
+    </div>
+  </div>
+</nav>
+
+<script>
+  let open = true;
+  function toggleNav() {
+    open = !open;
+
+    document
+      .getElementsByClassName("menu")[0]
+      .setAttribute("active", (!open).toString());
+
+    if (open) {
+      document.getElementsByClassName("links")[0].classList.remove("open");
+    } else {
+      document.getElementsByClassName("links")[0].classList.add("open");
+    }
+  }
+</script>
