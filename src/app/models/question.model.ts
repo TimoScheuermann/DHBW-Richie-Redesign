@@ -1,4 +1,4 @@
-import { IUser } from '../shared/user.service';
+import { IUser } from "../shared/user.service";
 
 export class Question {
   id: string;
@@ -11,19 +11,22 @@ export class Question {
   comments: any;
   author: IUser;
   isReviewed: boolean;
+  status: string;
 
   constructor(
-    { question, answer, source, lecture }: Partial<Question> = {
-      question: '',
-      answer: '',
-      source: '',
-      lecture: ''
+    { question, answer, source, lecture, status }: Partial<Question> = {
+      question: "",
+      answer: "",
+      source: "",
+      lecture: "",
+      status: ""
     }
   ) {
     this.question = question;
     this.answer = answer;
     this.source = source;
     this.lecture = lecture;
+    this.status = status;
   }
 
   get likes(): number {
@@ -34,10 +37,11 @@ export class Question {
   }
 
   public reset() {
-    this.question = '';
-    this.answer = '';
-    this.source = '';
-    this.lecture = '';
+    this.question = "";
+    this.answer = "";
+    this.source = "";
+    this.lecture = "";
+    this.status = "";
     return this;
   }
 

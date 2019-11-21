@@ -2,20 +2,20 @@
 <div class="blurTitle">Review</div>
 <div class="background-spacer"></div>
 
-<div class="seperator specialSeperator">
+<div class="seperator">
   <h2>Übersicht</h2>
   <div>
-    <div class="type">
-      <div class="feedback name"></div>
-      <div class="amount">8</div>
-    </div>
-    <div active="true" class="type">
-      <div class="new name"></div>
-      <div class="amount">17</div>
-    </div>
-    <div active="true" class="type">
-      <div class="delete name"></div>
-      <div class="amount">2</div>
+    <div
+      *ngFor="let filter of filters"
+      [attr.active]="isFilterActive(filter)"
+      (tap)="toggleFilter(filter)"
+      class="type"
+    >
+      <div
+        [attr.active]="isFilterActive(filter)"
+        [ngClass]="['name', filter]"
+      ></div>
+      <div class="amount">{{ getAmountOfX(filter) }}</div>
     </div>
   </div>
 </div>
@@ -24,91 +24,56 @@
   <h2>Offene Tickets</h2>
   <div class="tableWrapper">
     <table>
-      <tr>
+      <tr *ngIf="getFilteredQuestions().length > 0">
         <th>Status</th>
         <th>Frage</th>
         <th>Antwort</th>
       </tr>
-      <tr>
+      <tr
+        *ngFor="let question of getFilteredQuestions()"
+        (tap)="currentQuestion = question; opened = true"
+      >
         <td>
           <div active="true" class="type">
-            <div class="delete name"></div>
+            <div [ngClass]="['name', question.status]"></div>
           </div>
         </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="delete name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="delete name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="feedback name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="delete name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="new name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>
-          42. f**king boomer Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ducimus aperiam, minima ipsum vitae eius fugiat asperiores
-          accusantium molestias dicta a omnis totam quidem atque quis, iure eos
-          beatae possimus laborum! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Cum repudiandae officia maxime nam reprehenderit
-          odio quaerat ipsa aut et eaque dicta repellendus, culpa nesciunt
-          laudantium, non error rerum, unde earum!
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="new name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
-      </tr>
-      <tr>
-        <td>
-          <div active="true" class="type">
-            <div class="feedback name"></div>
-          </div>
-        </td>
-        <td>Was ist die Antwort auf alles?</td>
-        <td>42. f**king boomer</td>
+        <td>{{ question.question }}</td>
+        <td>{{ question.answer }}</td>
       </tr>
     </table>
   </div>
 </div>
+
+<richie-popup
+  [opened]="opened"
+  (close)="opened = false"
+  header="Frage & Antwort bearbeiten"
+>
+  <div active="true" class="type">
+    <div [ngClass]="['name', '' + currentQuestion.status]"></div>
+  </div>
+
+  <h2>Frage</h2>
+  <textarea rows="5">{{ currentQuestion.question }}</textarea>
+
+  <h2>Antwort</h2>
+  <textarea rows="5">{{ currentQuestion.answer }}</textarea>
+
+  <div class="grid grid-3-1">
+    <div>
+      <h2>Quelle</h2>
+      <textarea rows="1">{{ currentQuestion.source }}</textarea>
+    </div>
+
+    <div>
+      <h2>Vorlesung</h2>
+      <div class="filter">Vorlesung<i class="ti ti-list"></i></div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <div class="iconButton"><i class="ti ti-delete"></i>Frage löschen</div>
+    <div class="iconButton"><i class="ti ti-reply"></i>Frage überarbeiten</div>
+  </div>
+</richie-popup>

@@ -3,10 +3,7 @@
   <head>
     <base href="/" />
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="DHBW Richie" />
@@ -37,8 +34,26 @@
       href="https://cdn.jsdelivr.net/gh/TimoScheuermann/Timos-Icons@latest/docs/iconSet/style.css"
     />
   </head>
+  <style>
+    .center-splash {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .center-splash img {
+      border-radius: 20px;
+      width: 50%;
+    }
+  </style>
   <body ontouchstart="">
-    <app-root></app-root>
+    <app-root>
+      <div class="center-splash">
+        <img src="./assets/icons/icon-512x512.png" />
+        <h2>Richie wird gestartet</h2>
+      </div>
+    </app-root>
     <noscript
       >Please enable JavaScript to continue using this application.</noscript
     >

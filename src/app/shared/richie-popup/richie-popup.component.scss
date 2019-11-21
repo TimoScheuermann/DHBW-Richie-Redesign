@@ -1,0 +1,188 @@
+@media only screen and(max-width: 849px) {
+  .popUp {
+    .card {
+      padding: 0px calc(10px + var(--safe-area-inset-left))
+        var(--safe-area-inset-bottom) calc(10px + var(--safe-area-inset-right));
+      width: calc(
+        100vw - 20px - var(--safe-area-inset-left) -
+          var(--safe-area-inset-right)
+      );
+      border-radius: 10px 10px 5px 5px;
+      max-height: calc(100vh - 50px);
+      bottom: 0;
+
+      h1 {
+        padding: 15px 10px;
+        margin: 0px -10px;
+      }
+
+      .close {
+        display: none;
+      }
+      transition: all 0.7s ease-in-out;
+    }
+    &.opened {
+      .card {
+        transform: translateY(0);
+      }
+    }
+    &.closed {
+      .card {
+        transform: translateY(100%);
+      }
+    }
+  }
+  :host ::ng-deep {
+    .card {
+      .iconButton {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        max-height: none;
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 850px) {
+  .popUp {
+    .card {
+      padding: 0px 40px;
+      width: fit-content;
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+
+      h1 {
+        padding: 20px 40px 0px 20px;
+      }
+    }
+    &.opened {
+      animation-duration: 0.3s;
+      .card {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+    &.closed {
+      animation-duration: 0.3s;
+      .card {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+      }
+    }
+  }
+  :host ::ng-deep {
+    .card {
+      .iconButton {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes closePop {
+  0% {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(7px);
+  }
+  0%,
+  99% {
+    transform: scale(1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transform: scale(0);
+  }
+}
+
+@keyframes openPop {
+  0% {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    transform: scale(0);
+  }
+  1% {
+    transform: scale(1);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(7px);
+    transform: scale(1);
+  }
+}
+
+.popUp {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 400;
+
+  &.opened {
+    animation: openPop 0.7s ease-in-out forwards;
+  }
+  &.closed {
+    animation: closePop 0.7s ease-in-out forwards;
+  }
+
+  .card {
+    position: absolute;
+    background: var(--paragraph);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+:host ::ng-deep {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    * {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    .type {
+      position: absolute;
+      top: 25px;
+    }
+    .filter {
+      display: block;
+      max-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      * {
+        display: inline-flex;
+      }
+      i {
+        margin-left: 10px;
+      }
+    }
+    .buttons {
+      text-align: center;
+      .iconButton {
+        i {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    background: var(--paragraph);
+    z-index: 200;
+    position: sticky;
+    top: 0;
+  }
+}

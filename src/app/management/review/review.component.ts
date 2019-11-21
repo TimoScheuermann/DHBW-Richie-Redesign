@@ -12,60 +12,62 @@ export class ReviewComponent implements OnInit {
   constructor(
     private notificationService: NotificationService,
     private questionService: QuestionService
-  ) {}
+  ) {
+    this.filters = ["new", "feedback", "delete"];
+    this.filterList = [...this.filters];
+  }
 
-  public lectures = [
-    "Einführung IT",
-    "Logik & Algebra",
-    "Finanzmathe",
-    "Programmieren I",
-    "Programmieren II",
-    "Bilanzierung",
-    "Vertrags-Recht",
-    "Was auch immer",
-    "soll mir das",
-    "Backend schicken"
-  ];
-  public currentQuestion: Question = {} as Question;
+  public opened: boolean = false;
+  public filters: String[] = [];
+  public filterList: String[] = [];
+  public currentQuestion: Question = { status: "new" } as Question;
   public questions: Question[] = [];
-  public overlayStyle: any = { display: "none" };
 
   ngOnInit(): void {
-    this.getUnansweredQuestions();
+    // TODO: READD
+    // this.getUnansweredQuestions();
+    this.questions.push({ status: this.filters[0] } as Question);
+    this.questions.push({ status: this.filters[1] } as Question);
+    this.questions.push({ status: this.filters[1] } as Question);
+    this.questions.push({ status: this.filters[2] } as Question);
+    this.questions.push({ status: this.filters[0] } as Question);
+    this.questions.push({ status: this.filters[2] } as Question);
+    this.questions.push({ status: this.filters[1] } as Question);
   }
 
-  selectionChanged(selected): void {
-    this.currentQuestion.lecture = selected;
+  public getFilteredQuestions(): Question[] {
+    return this.questions.filter(x => this.isFilterActive(x.status));
   }
 
-  public togglePopUp(question: Question): void {
-    this.currentQuestion = question;
-    this.overlayStyle = {
-      display: this.overlayStyle.display == "none" ? "block" : "none"
-    };
-  }
-
-  closePopUp(): void {
-    this.overlayStyle = { display: "none" };
-  }
-
-  buttonKeydown(name, event): void {
-    if (event.key === "Enter") {
-      if (name === "del") this.deleteQuestion();
-      if (name === "add") this.acceptQuestion();
+  public toggleFilter(filter) {
+    if (this.isFilterActive(filter)) {
+      var index = this.filterList.indexOf(filter);
+      if (index > -1) {
+        this.filterList.splice(index, 1);
+      }
+      return;
     }
+    this.filterList.push(filter);
   }
 
-  acceptQuestion(): void {
-    this.closePopUp();
+  public isFilterActive(filter): boolean {
+    return this.filterList.includes(filter);
+  }
+
+  public getAmountOfX(of): number {
+    return this.questions.filter(x => x.status == of).length;
+  }
+
+  public acceptQuestion(): void {
+    this.opened = false;
     this.notificationService.sendNotification(
       "Frage wurde eingetragen",
       NotificationType.SUCCESS
     );
   }
 
-  deleteQuestion(): void {
-    this.closePopUp();
+  public deleteQuestion(): void {
+    this.opened = false;
     this.notificationService.sendNotification(
       "Frage wurde gelöscht",
       NotificationType.ERROR

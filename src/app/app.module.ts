@@ -1,24 +1,42 @@
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { APP_INITIALIZER, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AuthInterceptor } from './auth.interceptor';
-import { InformationModule } from './information/information.module';
-import { ManagementModule } from './management/management.module';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { QuestionModule } from './question/question.module';
-import './scss/styles.scss';
-import { SearchModule } from './search/search.module';
-import { SharedModule } from './shared/shared.module';
-import { darkTheme, lightTheme } from './shared/themes';
-import { UserService } from './shared/user.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { APP_INITIALIZER, Injectable, NgModule } from "@angular/core";
+import {
+  BrowserModule,
+  HammerGestureConfig,
+  HAMMER_GESTURE_CONFIG
+} from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ServiceWorkerModule } from "@angular/service-worker";
+import * as Hammer from "hammerjs";
+import { environment } from "../environments/environment";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { AuthInterceptor } from "./auth.interceptor";
+import { InformationModule } from "./information/information.module";
+import { ManagementModule } from "./management/management.module";
+import { NotFoundComponent } from "./not-found/not-found.component";
+import { QuestionModule } from "./question/question.module";
+import "./scss/styles.scss";
+import { SearchModule } from "./search/search.module";
+import { SharedModule } from "./shared/shared.module";
+import { darkTheme, lightTheme } from "./shared/themes";
+import { UserService } from "./shared/user.service";
 
 export function checkAuth(userService: UserService) {
   return () => userService.checkToken();
+}
+
+@Injectable()
+export class RichieHammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    swipe: { direction: Hammer.DIRECTION_ALL }
+  };
+  // buildHammer(element: HTMLElement) {
+  //   let mc = new Hammer(element, {
+  //     touchAction: "auto"
+  //   });
+  //   return mc;
+  // }
 }
 
 @NgModule({
@@ -34,9 +52,11 @@ export function checkAuth(userService: UserService) {
     BrowserAnimationsModule,
     SharedModule.forRoot({
       themes: [lightTheme, darkTheme],
-      active: 'light'
+      active: "light"
     }),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production
+    })
   ],
   providers: [
     {
@@ -49,6 +69,10 @@ export function checkAuth(userService: UserService) {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
+    },
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: RichieHammerConfig
     }
   ],
   bootstrap: [AppComponent]
