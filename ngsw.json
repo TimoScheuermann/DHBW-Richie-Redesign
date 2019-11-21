@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1574283866973,
+  "timestamp": 1574337931397,
   "index": "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
   "assetGroups": [
     {
@@ -10,15 +10,15 @@
       "urls": [
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.c035f944183da1ca7f40.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.c035f944183da1ca7f40.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.36f862715d7af8bcfdc5.css",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.85435460f0233666e4d7.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.85435460f0233666e4d7.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.1161d7571a36aab94138.css",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.e68e0afb646781c73933.js",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.466e66e3e86e3c874c1f.js",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js",
-        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.36f862715d7af8bcfdc5.css"
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.1161d7571a36aab94138.css"
       ],
       "patterns": []
     },
@@ -37,6 +37,7 @@
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-96x96.png",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/landing.jpg",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png",
+        "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/splash.svg",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg",
         "https://timoscheuermann.github.io/DHBW-Richie-Redesign/user-card.9536648b496fcdd19583.svg"
@@ -67,19 +68,20 @@
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/icons/icon-96x96.png": "bc1bb0793646e469aead011d0e820b1e8e68b3df",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/landing.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/logo.png": "31121ebf02ba6923587a4fa66797607e42b4c88d",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/splash.svg": "30c9a66f19eeac31dfe0cc8a10f19c9a5609b058",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/assets/user-card.svg": "30bc44986c2777489e2f273311a9402ab77cd08a",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "c63dd1dc49bde5aac74b07a6ce8d0d21b9d904cf",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/index.html": "457f3ba9d2a286de9c2680998e43d516f49db72c",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/landing.e6c0f1150b0bbc9b4bd8.jpg": "5c6fd7a1cbb2e6843865b9f07766636e2f4bbb47",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.c035f944183da1ca7f40.js": "6ab8433ca622badc3918398bfaed9c35883903c4",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.c035f944183da1ca7f40.js": "8fd1cd9b44476479d82472d23476e9f37f9d6052",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.36f862715d7af8bcfdc5.css": "394dfe85d8f704fa2a0e64c0624631d9c1048467",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "67c8bbda06bb69a11ab1f013cea0525cd05740cc",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.0ef207fb7b4761464817.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.2b9ce34c123ac007a8ba.js": "45c51483238468881240579c3fdecd19144cff17",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es2015.85435460f0233666e4d7.js": "7248ff6bc435d6ea06acc36fee26b6156491586f",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main-es5.85435460f0233666e4d7.js": "77745be21c6074d55f865d7093765aa36dd3adf5",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/main.1161d7571a36aab94138.css": "f6bd1137da4e4526aa07fdb81ff9dcf6d2a14787",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/manifest.webmanifest": "d8b15902d68c1b28a397bb27e4025429a72ecfbd",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es2015.e68e0afb646781c73933.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/polyfills-es5.466e66e3e86e3c874c1f.js": "45c51483238468881240579c3fdecd19144cff17",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es2015.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/runtime-es5.e8a2810b3b08d6a1b6aa.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.36f862715d7af8bcfdc5.css": "394dfe85d8f704fa2a0e64c0624631d9c1048467",
+    "https://timoscheuermann.github.io/DHBW-Richie-Redesign/styles.1161d7571a36aab94138.css": "f6bd1137da4e4526aa07fdb81ff9dcf6d2a14787",
     "https://timoscheuermann.github.io/DHBW-Richie-Redesign/user-card.9536648b496fcdd19583.svg": "30bc44986c2777489e2f273311a9402ab77cd08a"
   },
   "navigationUrls": [

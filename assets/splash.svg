@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#08f"/>
+      <stop offset="1" stop-color="#0773d2"/>
+    </linearGradient>
+    <filter id="Ellipse_5" x="96" y="96" width="310.618" height="310.618" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_6" x="271.962" y="271.994" width="204.91" height="204.91" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-logo">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-logo)">
+    <rect width="512" height="512" fill="url(#linear-gradient)"/>
+    <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-1.199 35.801)">
+      <g transform="matrix(1, 0, 0, 1, 1.2, -35.8)" filter="url(#Ellipse_5)">
+        <g id="Ellipse_5-2" data-name="Ellipse 5" transform="translate(102 102)" fill="none">
+          <path d="M119.309,0A119.309,119.309,0,1,1,0,119.309,119.309,119.309,0,0,1,119.309,0Z" stroke="none"/>
+          <path d="M 119.3091583251953 41.00001525878906 C 76.12937927246094 41.00001525878906 41.00001525878906 76.12937927246094 41.00001525878906 119.3091583251953 C 41.00001525878906 162.4889526367188 76.12937927246094 197.6183013916016 119.3091583251953 197.6183013916016 C 162.4889526367188 197.6183013916016 197.6183013916016 162.4889526367188 197.6183013916016 119.3091583251953 C 197.6183013916016 76.12937927246094 162.4889526367188 41.00001525878906 119.3091583251953 41.00001525878906 M 119.3091583251953 1.52587890625e-05 C 185.2017974853516 1.52587890625e-05 238.6183013916016 53.41651916503906 238.6183013916016 119.3091583251953 C 238.6183013916016 185.2017974853516 185.2017974853516 238.6183013916016 119.3091583251953 238.6183013916016 C 53.41651916503906 238.6183013916016 1.52587890625e-05 185.2017974853516 1.52587890625e-05 119.3091583251953 C 1.52587890625e-05 53.41651916503906 53.41651916503906 1.52587890625e-05 119.3091583251953 1.52587890625e-05 Z" stroke="none" fill="#fff"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1.2, -35.8)" filter="url(#Rechteck_6)">
+        <path id="Rechteck_6-2" data-name="Rechteck 6" d="M0,0H111.855a25.369,25.369,0,0,1,25.369,25.369h0a25.369,25.369,0,0,1-25.369,25.369H0Z" transform="translate(313.84 277.99) rotate(45)" fill="rgba(255,255,255,0.5)"/>
+      </g>
+    </g>
+  </g>
+</svg>
