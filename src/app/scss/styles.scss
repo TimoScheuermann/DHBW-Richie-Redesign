@@ -122,9 +122,11 @@ a[richie] {
   &:not(:last-child) {
     margin-right: 15px;
   }
+  * {
+    color: $blue;
+  }
   i {
-    margin-right: 21px;
-    top: 2px;
+    padding-right: 5px;
   }
 }
 
@@ -244,12 +246,6 @@ a[richie] {
         i {
           color: #111;
         }
-      }
-
-      i {
-        transition: 0.2s ease;
-        margin-left: 10px;
-        top: 1px;
       }
       &::before {
         content: "Sign in with";
@@ -410,13 +406,11 @@ form {
   &:hover {
     opacity: 1;
   }
-
-  i {
-    margin-left: 10px;
-    top: 2px;
-  }
   &:not(:last-child) {
     margin-right: 25px;
+  }
+  i {
+    padding-left: 10px;
   }
 }
 
@@ -472,9 +466,6 @@ form {
         transition: 0.2s ease;
         &:hover {
           opacity: 1;
-        }
-        i {
-          margin-right: 5px;
         }
         &:nth-child(4) {
           color: rgba(var(--color), 0.5);
@@ -609,9 +600,9 @@ textarea {
   transition: color 0.4s ease-in-out;
 
   i {
-    margin-right: 24px;
-    top: 1px;
     font-weight: 400;
+    padding-right: 10px;
+    color: inherit;
   }
 
   &:not(:last-child) {
@@ -712,7 +703,6 @@ textarea {
       margin: 0;
     }
     i {
-      margin: auto;
       font-size: 3em;
     }
     .account {
@@ -838,10 +828,6 @@ textarea {
       .amount {
         font-weight: 600;
         color: rgba(var(--color), 0.8);
-        i {
-          top: 1px;
-          margin: 0px 5px;
-        }
       }
 
       td {
@@ -872,10 +858,6 @@ textarea {
 
   &::before {
     content: "Signed in with";
-  }
-  i {
-    margin-left: 7px;
-    top: 1px;
   }
 }
 
@@ -951,9 +933,6 @@ textarea {
     &::before {
       background: #fff;
     }
-    i {
-      margin-right: 20px;
-    }
   }
 }
 
@@ -961,7 +940,7 @@ textarea {
   background: var(--background);
   padding: 20px 10px;
   border-radius: 5px;
-  * {
+  & > * {
     display: inline-block;
     width: 100%;
     margin: 0 !important;

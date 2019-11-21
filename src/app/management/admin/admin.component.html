@@ -5,18 +5,18 @@
 <div class="seperator specialSeperator">
   <h2>Verwaltung/ Management</h2>
   <div>
-    <a richie [routerLink]="['./']" fragment="stats"
-      ><i class="ti ti-rating"></i>Statistik</a
-    >
-    <a richie [routerLink]="['./']" fragment="search"
-      ><i class="ti ti-search"></i>Benutzersuche</a
-    >
-    <a richie [routerLink]="['./']" fragment="admins"
-      ><i class="ti ti-users"></i>Admins</a
-    >
-    <a richie [routerLink]="['./']" fragment="revs"
-      ><i class="ti ti-review"></i>Reviewer</a
-    >
+    <a richie [routerLink]="['./']" fragment="stats">
+      <i class="ti-rating"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>Statistik
+    </a>
+    <a richie [routerLink]="['./']" fragment="search">
+      <i class="ti ti-search"></i>Benutzersuche
+    </a>
+    <a richie [routerLink]="['./']" fragment="admins">
+      <i class="ti-users"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Admins
+    </a>
+    <a richie [routerLink]="['./']" fragment="revs">
+      <i class="ti-review"><span class="path1"></span><span class="path2"></span></i>Reviewer
+    </a>
   </div>
 </div>
 
@@ -24,23 +24,23 @@
 <div class="paragraph">
   <h2>Statistik</h2>
   <div class="grid grid-1-1-1-1">
-    <div class="stat">
-      <p>Registrierte Benutzer</p>
-      <div class="icon"><i class="ti ti-users"></i></div>
+    <div class="stat" (tap)="opened = true">
+      <p>Registrierte<br />Benutzer</p>
+      <div class="icon"><i class="ti-users"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></div>
       <div class="number">10</div>
     </div>
     <div class="stat">
-      <p>Fragen eingereicht</p>
-      <div class="icon"><i class="ti ti-book"></i></div>
+      <p>Fragen<br />eingereicht</p>
+      <div class="icon"><i class="ti-book"><span class="path1"></span><span class="path2"></span></i></div>
       <div class="number">234</div>
     </div>
     <div class="stat">
-      <p>Fragen gestellt</p>
+      <p>Fragen<br />gestellt</p>
       <div class="icon"><i class="ti ti-questionmark"></i></div>
       <div class="number">45902</div>
     </div>
     <div class="stat">
-      <p>Telegram Channel</p>
+      <p>Telegram<br />Channel</p>
       <div class="icon"><i class="ti ti-telegram"></i></div>
       <div class="number">5</div>
     </div>
@@ -128,3 +128,56 @@
     </table>
   </div>
 </div>
+
+
+<richie-popup
+  [opened]="opened"
+  (close)="opened = false"
+  header="Nutzereinstellungen"
+>
+  <div class="grid grid-popup">
+    <div class="usercard"><i class="ti-user-card"><span class="path1"></span><span class="path2"></span></i></div>
+    <div class="tableWrapper">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Max Mustermann</td>
+        </tr>
+        <tr>
+          <td>E-Mail</td>
+          <td>max.mustermann@mail.de</td>
+        </tr>
+        <tr>
+          <td>Mitglied seit</td>
+          <td>16.10.2019</td>
+        </tr>
+      </table>
+    </div>
+    <div class="userstatus">
+      <div class="stateIcon green"><i class="ti-user-active"><span class="path1"></span><span class="path2"></span></i></div>
+      <div class="stateText green">Freigeschaltet</div>
+    </div>
+  </div>
+  <div class="grid grid-1-1-1-1">
+    <div class="stat">
+      <p>Benutzer-<br />Nummer</p>
+      <div class="icon"><i class="ti ti-hashtag"></i></div>
+      <div class="number">3</div>
+    </div>
+    <div class="stat">
+      <p>benutzer-<br />Gruppe</p>
+      <div class="icon"><i class="ti ti-user"></i></div>
+      <div class="text">Admin</div>
+    </div>
+    <div class="stat">
+      <p>Fragen<br />eingereicht</p>
+      <div class="icon"><i class="ti ti-book"></i></div>
+      <div class="number">2</div>
+    </div>
+    <div class="stat">
+      <p>Fragen<br />gestellt</p>
+      <div class="icon"><i class="ti ti-questionmark"></i></div>
+      <div class="number">134</div>
+    </div>
+  </div>
+</richie-popup>

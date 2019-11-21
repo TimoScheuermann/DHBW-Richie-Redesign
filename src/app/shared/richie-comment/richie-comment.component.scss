@@ -39,7 +39,6 @@
       cursor: pointer;
       i {
         transform: rotateY(180deg);
-        margin-right: 18px;
       }
       &:hover {
         opacity: 0.9;
@@ -62,10 +61,6 @@
     .author {
       font-weight: 700;
       color: #08f;
-      i {
-        margin-right: 5px;
-        top: 2px;
-      }
     }
     .date {
       margin-left: 10px;
@@ -82,10 +77,6 @@
       transition: 0.2s ease;
       &:hover {
         opacity: 1;
-      }
-      i {
-        top: 3px;
-        font-size: 16px;
       }
     }
   }

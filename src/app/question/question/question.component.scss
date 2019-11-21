@@ -40,7 +40,6 @@
       }
       i {
         opacity: 0.8;
-        margin-right: 10px;
       }
       &[amount]::after {
         content: attr(amount);

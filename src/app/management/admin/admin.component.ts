@@ -20,6 +20,8 @@ export class AdminComponent implements OnInit {
     public sharedFunctions: SharedFunctions
   ) {}
 
+  public opened: boolean = false;
+
   ngOnInit(): void {
     return;
     if (!this.userService.richieUser.isAdmin) {

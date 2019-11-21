@@ -27,21 +27,6 @@ a {
     i {
       display: inline-block;
       font-size: 30px;
-      line-height: 40px;
-      width: 40px;
-      height: 40px;
-      margin-top: 10px;
-      padding: 10px;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      border: 1px solid #fff;
-      border-radius: 500px;
-      overflow: hidden;
-      margin-bottom: 10px;
-      &[class^='ti ti-']::before {
-        left: 14px;
-        top: 15px;
-      }
     }
 
     .type {
@@ -88,11 +73,7 @@ a {
     }
 
     i {
-      top: 50%;
-      left: 50%;
-      transform: translate(-75%, -50%);
       font-size: 25px;
-      overflow: hidden;
     }
 
     .type {
