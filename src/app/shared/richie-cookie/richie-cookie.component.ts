@@ -1,48 +1,39 @@
-import { state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
-import { NotificationType } from 'src/app/models';
-import { NotificationService } from '../notification.service';
+import { Component, OnInit } from "@angular/core";
+import { NotificationType } from "src/app/models";
+import { NotificationService } from "../notification.service";
 
 @Component({
-  selector: 'richie-cookie',
-  templateUrl: './richie-cookie.component.html',
-  styleUrls: ['./richie-cookie.component.scss'],
-  animations: [
-    trigger('hideCookie', [
-      state('open', style({})),
-      state(
-        'closed',
-        style({ transform: 'translateZ(600px) translateY(300px)', opacity: 0 })
-      ),
-      transition('open => closed', [])
-    ])
-  ]
+  selector: "richie-cookie",
+  templateUrl: "./richie-cookie.component.html",
+  styleUrls: ["./richie-cookie.component.scss"]
 })
 export class RichieCookieComponent implements OnInit {
   constructor(public readonly notificationService: NotificationService) {}
 
-  public cookieStyle: boolean = true;
+  public opened: boolean = true;
 
   ngOnInit() {
-    if ((JSON.parse(localStorage.getItem('richie-cookie-banner')) || {}).accepted) {
-      this.cookieStyle = false;
+    if (
+      (JSON.parse(localStorage.getItem("richie-cookie-banner")) || {}).accepted
+    ) {
+      this.hide();
     }
   }
 
   public hide(): void {
-    this.cookieStyle = false;
+    this.opened = false;
   }
 
   private sendNotification(): void {
     this.notificationService.sendNotification(
-      'Einstellungen gespeichert!',
+      "Einstellungen gespeichert!",
       NotificationType.INFORMATION
     );
   }
 
   private saveRespone(accepted: boolean) {
     localStorage.setItem(
-      'richie-cookie-banner',
+      "richie-cookie-banner",
       JSON.stringify({
         accepted
       })

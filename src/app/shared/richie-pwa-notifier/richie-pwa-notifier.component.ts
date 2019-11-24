@@ -1,23 +1,22 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "richie-pwa-notifier",
   templateUrl: "./richie-pwa-notifier.component.html",
   styleUrls: ["./richie-pwa-notifier.component.scss"]
 })
-export class RichiePwaNotifierComponent implements OnInit {
-  constructor() {}
+export class RichiePwaNotifierComponent {
+  constructor() {
+    this.opened = !this.isInStandaloneMode();
+  }
 
-  public message: string = "N/A";
+  public opened: boolean = false;
 
-  ngOnInit() {
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      // do things here
-      // set a variable to be used when calling something
-      // e.g. call Google Analytics to track standalone use
-      this.message = "It is a PWA";
-    } else {
-      this.message = "Not as PWA";
-    }
+  public isInStandaloneMode(): boolean {
+    return (
+      window.matchMedia("(display-mode: standalone)").matches || // Desktop
+      window.navigator["standalone"] || // iOS
+      document.referrer.includes("android-app://") // Android App
+    );
   }
 }

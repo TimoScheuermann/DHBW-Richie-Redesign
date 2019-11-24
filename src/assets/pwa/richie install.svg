@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="70" viewBox="0 0 334 70">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.261" x2="0.83" y2="0.881" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <filter id="Pfad_29" x="66" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_3" x="198" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-2"/>
+      <feFlood flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_13" x="264" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-3"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_14" x="0" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-4"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#08f"/>
+      <stop offset="1" stop-color="#0773d2"/>
+    </linearGradient>
+    <filter id="Rechteck_9" x="132" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-5"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_6" x="163.145" y="31.148" width="84.979" height="84.979" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-richie_install">
+      <rect width="334" height="70"/>
+    </clipPath>
+  </defs>
+  <g id="richie_install" data-name="richie install" clip-path="url(#clip-richie_install)">
+    <g id="Gruppe_9" data-name="Gruppe 9" transform="translate(85 -2)">
+      <g transform="matrix(1, 0, 0, 1, -85, 2)" filter="url(#Pfad_29)">
+        <path id="Pfad_29-2" data-name="Pfad 29" d="M11,0H39A11,11,0,0,1,50,11V39A11,11,0,0,1,39,50H11A11,11,0,0,1,0,39V11A11,11,0,0,1,11,0Z" transform="translate(76 10)" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -85, 2)" filter="url(#Rechteck_3)">
+        <rect id="Rechteck_3-2" data-name="Rechteck 3" width="50" height="50" rx="11" transform="translate(208 10)" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -85, 2)" filter="url(#Rechteck_13)">
+        <rect id="Rechteck_13-2" data-name="Rechteck 13" width="50" height="50" rx="11" transform="translate(274 10)" opacity="0.75" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -85, 2)" filter="url(#Rechteck_14)">
+        <rect id="Rechteck_14-2" data-name="Rechteck 14" width="50" height="50" rx="11" transform="translate(10 10)" opacity="0.75" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(57 12)">
+        <g transform="matrix(1, 0, 0, 1, -142, -10)" filter="url(#Rechteck_9)">
+          <rect id="Rechteck_9-2" data-name="Rechteck 9" width="50" height="50" rx="11" transform="translate(142 10)" fill="url(#linear-gradient-5)"/>
+        </g>
+        <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-27.627 9.961)">
+          <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(37.588)">
+            <path id="Pfad_25" data-name="Pfad 25" d="M11.651,0A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" fill="none"/>
+            <path id="Pfad_26" data-name="Pfad 26" d="M11.651,4A7.647,7.647,0,1,0,19.3,11.651,7.656,7.656,0,0,0,11.651,4m0-4A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" transform="translate(0 0)" fill="#fff"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -114.37, -19.96)" filter="url(#Rechteck_6)">
+            <path id="Rechteck_6-2" data-name="Rechteck 6" d="M0,0H10.923A2.477,2.477,0,0,1,13.4,2.477h0a2.477,2.477,0,0,1-2.477,2.477H0Z" transform="translate(172.65 37.15) rotate(45)" fill="rgba(255,255,255,0.5)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -26,9 +26,12 @@ export function checkAuth(userService: UserService) {
   return () => userService.checkToken();
 }
 
+Hammer.defaults.domEvents = true;
+
 @Injectable()
 export class RichieHammerConfig extends HammerGestureConfig {
   overrides = <any>{
+    pan: { direction: Hammer.DIRECTION_ALL },
     swipe: { direction: Hammer.DIRECTION_ALL }
   };
   // buildHammer(element: HTMLElement) {

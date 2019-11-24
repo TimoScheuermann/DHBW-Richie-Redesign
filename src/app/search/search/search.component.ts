@@ -1,4 +1,4 @@
-import { state, style, transition, trigger } from '@angular/animations';
+import { state, style, transition, trigger } from "@angular/animations";
 import {
   AfterViewInit,
   Component,
@@ -7,63 +7,63 @@ import {
   OnInit,
   QueryList,
   ViewChildren
-} from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { delay, skipWhile } from 'rxjs/operators';
-import { NotificationType } from 'src/app/models/notificationTyp.enum';
-import { Question } from 'src/app/models/question.model';
-import { NotificationService } from 'src/app/shared/notification.service';
-import { QuestionService } from '../../question/question.service';
-import { constants } from '../../shared/constants';
+} from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { delay, skipWhile } from "rxjs/operators";
+import { NotificationType } from "src/app/models/notificationTyp.enum";
+import { Question } from "src/app/models/question.model";
+import { NotificationService } from "src/app/shared/notification.service";
+import { QuestionService } from "../../question/question.service";
+import { constants } from "../../shared/constants";
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss'],
+  selector: "app-search",
+  templateUrl: "./search.component.html",
+  styleUrls: ["./search.component.scss"],
   animations: [
-    trigger('quickLinks', [
-      state('linksOpen', style({ 'max-height': '60px' })),
-      state('linksClose', style({ 'max-height': '0px' })),
-      transition('linksOpen <=> linksClose', [])
+    trigger("quickLinks", [
+      state("linksOpen", style({ "max-height": "60px" })),
+      state("linksClose", style({ "max-height": "0px" })),
+      transition("linksOpen <=> linksClose", [])
     ]),
-    trigger('landingStyle', [
+    trigger("landingStyle", [
       state(
-        'landingOpen',
+        "landingOpen",
         style({
-          'min-height': '100vh',
-          'margin-bottom': '0px'
+          "min-height": "100vh",
+          "margin-bottom": "0px"
         })
       ),
       state(
-        'landingClose',
+        "landingClose",
         style({
-          'min-height': '268.667px',
-          'margin-bottom': '-50px'
+          "min-height": "268.667px",
+          "margin-bottom": "-50px"
         })
       ),
-      transition('landingOpen <=> landingClose', [])
+      transition("landingOpen <=> landingClose", [])
     ]),
-    trigger('landingWrapper', [
-      state('landingWrapperOpen', style({ top: '50%' })),
-      state('landingWrapperClose', style({ top: '124.334px' })),
-      transition('landingWrapperOpen <=> landingWrapperClose', [])
+    trigger("landingWrapper", [
+      state("landingWrapperOpen", style({ top: "50%" })),
+      state("landingWrapperClose", style({ top: "124.334px" })),
+      transition("landingWrapperOpen <=> landingWrapperClose", [])
     ]),
-    trigger('resultsWrapper', [
+    trigger("resultsWrapper", [
       state(
-        'resultsWrapperOpen',
+        "resultsWrapperOpen",
         style({
-          'display': 'none',
-          'max-height': '0px'
+          display: "none",
+          "max-height": "0px"
         })
       ),
       state(
-        'resultsWrapperClose',
+        "resultsWrapperClose",
         style({
-          'display': 'block',
-          'max-height': 'unset'
+          display: "block",
+          "max-height": "unset"
         })
       ),
-      transition('resultsWrapperOpen <=> resultsWrapperClose', [])
+      transition("resultsWrapperOpen <=> resultsWrapperClose", [])
     ])
   ]
 })
@@ -77,7 +77,10 @@ export class SearchComponent implements AfterViewInit, OnInit {
     this.constants = constants;
   }
 
-  @ViewChildren('qs')
+  opened: boolean = false;
+  currentQuestion: Question = new Question();
+
+  @ViewChildren("qs")
   qElements: QueryList<ElementRef<HTMLDivElement>>;
 
   // Animation trigger / Style Flags
@@ -87,12 +90,12 @@ export class SearchComponent implements AfterViewInit, OnInit {
   resultsWrapper: boolean = true;
 
   constants: any;
-  searchQuery: string = '';
+  searchQuery: string = "";
   foundQuestions: Question[] = [];
   isSearching: boolean = false;
 
   selectionChanged(filterNmbr: number, selection: string): void {
-    console.log('Filter %i -> %s', filterNmbr, selection);
+    console.log("Filter %i -> %s", filterNmbr, selection);
   }
 
   ngOnInit() {
@@ -114,24 +117,24 @@ export class SearchComponent implements AfterViewInit, OnInit {
   }
 
   onInputKeyDown(event: KeyboardEvent): void {
-    if (event.key === 'Enter') this.startSearch();
+    if (event.key === "Enter") this.startSearch();
   }
 
   startSearch(): void {
     if (this.isSearching) return;
     this.isSearching = true;
     this.toggleStyles(true);
-    this.router.navigate(['.'], {
+    this.router.navigate(["."], {
       relativeTo: this.route,
       queryParams: {
         q: this.searchQuery
       },
-      queryParamsHandling: 'merge'
+      queryParamsHandling: "merge"
     });
     this.questionService.searchForKeyword(this.searchQuery).subscribe(q => {
       if (!q.length) {
         this.notificationService.sendNotification(
-          'Es konnten leider keiner Suchergebnisse gefunden werden',
+          "Es konnten leider keiner Suchergebnisse gefunden werden",
           NotificationType.ERROR
         );
         this.isSearching = false;
@@ -159,18 +162,17 @@ export class SearchComponent implements AfterViewInit, OnInit {
       action,
       question
     }: {
-      action: 'like' | 'dislike';
+      action: "like" | "dislike";
       question: Question;
     },
     index: number
   ) {
-    this.foundQuestions[index] = await this.questionService.likeOrDislikeQuestion(
-      question.id,
-      action
-    );
+    this.foundQuestions[
+      index
+    ] = await this.questionService.likeOrDislikeQuestion(question.id, action);
   }
 
-  @HostListener('window:scroll')
+  @HostListener("window:scroll")
   onScroll(): void {
     if (!this.qElements || !this.qElements.length) {
       return;
@@ -180,10 +182,10 @@ export class SearchComponent implements AfterViewInit, OnInit {
       const positionFromTop = element.getBoundingClientRect().top;
       if (
         positionFromTop - window.innerHeight <= 0 &&
-        !element.classList.contains('come-in')
+        !element.classList.contains("come-in")
       ) {
-        element.classList.remove('resultWrapper');
-        element.classList.add('come-in');
+        element.classList.remove("resultWrapper");
+        element.classList.add("come-in");
       }
     });
   }

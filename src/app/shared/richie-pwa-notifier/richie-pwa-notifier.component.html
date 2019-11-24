@@ -1,4 +1,19 @@
-<div>
-  <p>richie-pwa-notifier works!</p>
-  <b>{{ message }}</b>
-</div>
+<richie-popup
+  [opened]="opened"
+  (close)="opened = false"
+  header="Install Richie"
+>
+  <img src="../../../assets/pwa/richie install.svg" />
+  <p>
+    Installiere diese App auf deinem Home Screen, für einen schnellen und
+    einfachen Zugriff.
+  </p>
+  <div class="howto">
+    Tippe auf
+    <i class="ti-share"
+      ><span class="path1"></span><span class="path2"></span
+    ></i>
+    und scrolle runter bis zu
+    <div class="installButton"></div>
+  </div>
+</richie-popup>

@@ -6,16 +6,25 @@
   <h2>Verwaltung/ Management</h2>
   <div>
     <a richie [routerLink]="['./']" fragment="stats">
-      <i class="ti-rating"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>Statistik
+      <i class="ti-rating"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span><span class="path4"></span
+        ><span class="path5"></span></i
+      >Statistik
     </a>
     <a richie [routerLink]="['./']" fragment="search">
       <i class="ti ti-search"></i>Benutzersuche
     </a>
     <a richie [routerLink]="['./']" fragment="admins">
-      <i class="ti-users"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Admins
+      <i class="ti-users"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span></i
+      >Admins
     </a>
     <a richie [routerLink]="['./']" fragment="revs">
-      <i class="ti-review"><span class="path1"></span><span class="path2"></span></i>Reviewer
+      <i class="ti-review"
+        ><span class="path1"></span><span class="path2"></span></i
+      >Reviewer
     </a>
   </div>
 </div>
@@ -26,12 +35,21 @@
   <div class="grid grid-1-1-1-1">
     <div class="stat" (tap)="opened = true">
       <p>Registrierte<br />Benutzer</p>
-      <div class="icon"><i class="ti-users"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></div>
+      <div class="icon">
+        <i class="ti-users"
+          ><span class="path1"></span><span class="path2"></span
+          ><span class="path3"></span
+        ></i>
+      </div>
       <div class="number">10</div>
     </div>
     <div class="stat">
       <p>Fragen<br />eingereicht</p>
-      <div class="icon"><i class="ti-book"><span class="path1"></span><span class="path2"></span></i></div>
+      <div class="icon">
+        <i class="ti-book"
+          ><span class="path1"></span><span class="path2"></span
+        ></i>
+      </div>
       <div class="number">234</div>
     </div>
     <div class="stat">
@@ -129,14 +147,17 @@
   </div>
 </div>
 
-
 <richie-popup
   [opened]="opened"
   (close)="opened = false"
   header="Nutzereinstellungen"
 >
   <div class="grid grid-popup">
-    <div class="usercard"><i class="ti-user-card"><span class="path1"></span><span class="path2"></span></i></div>
+    <div class="usercard">
+      <i class="ti-user-card"
+        ><span class="path1"></span><span class="path2"></span
+      ></i>
+    </div>
     <div class="tableWrapper">
       <table>
         <tr>
@@ -154,7 +175,11 @@
       </table>
     </div>
     <div class="userstatus">
-      <div class="stateIcon green"><i class="ti-user-active"><span class="path1"></span><span class="path2"></span></i></div>
+      <div class="stateIcon green">
+        <i class="ti-user-active"
+          ><span class="path1"></span><span class="path2"></span
+        ></i>
+      </div>
       <div class="stateText green">Freigeschaltet</div>
     </div>
   </div>
@@ -165,7 +190,7 @@
       <div class="number">3</div>
     </div>
     <div class="stat">
-      <p>benutzer-<br />Gruppe</p>
+      <p>Benutzer-<br />Gruppe</p>
       <div class="icon"><i class="ti ti-user"></i></div>
       <div class="text">Admin</div>
     </div>

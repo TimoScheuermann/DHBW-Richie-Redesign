@@ -59,7 +59,9 @@
     <div class="actions">
       <div class="action green"><i class="ti ti-like"></i>137</div>
       <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
+      <div class="action blue" (tap)="opened = true">
+        <i class="ti ti-feedback"></i>Feedback
+      </div>
       <div class="action">
         <i class="ti-share"
           ><span class="path1"></span><span class="path2"></span></i
@@ -68,6 +70,47 @@
     </div>
   </div>
 </div>
+
+<richie-popup
+  [opened]="opened"
+  (close)="opened = false"
+  header="Frage & Antwort bearbeiten"
+>
+  <h2>Frage</h2>
+  <textarea rows="5">{{ currentQuestion.question }}</textarea>
+
+  <h2>Antwort</h2>
+  <textarea rows="5">{{ currentQuestion.answer }}</textarea>
+
+  <div class="grid grid-3-1">
+    <div>
+      <h2>Kommentar</h2>
+      <textarea rows="1">{{ currentQuestion.source }}</textarea>
+    </div>
+
+    <div>
+      <h2>Vorlesung</h2>
+      <div class="filter">
+        Vorlesung<i class="ti-list"
+          ><span class="path1"></span><span class="path2"></span
+          ><span class="path3"></span><span class="path4"></span
+          ><span class="path5"></span><span class="path6"></span
+        ></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <div class="iconButton">
+      <i class="ti-delete"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span></i
+      >Frage löschen
+    </div>
+    <div class="iconButton"><i class="ti-reply"></i>Frage überarbeiten</div>
+  </div>
+</richie-popup>
+
 <style>
   @media screen and (max-height: 399px) {
     .searchBar {

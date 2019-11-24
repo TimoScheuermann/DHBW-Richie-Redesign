@@ -135,6 +135,7 @@
   }
 
   .card {
+    z-index: 401;
     position: absolute;
     background: var(--paragraph);
     overflow: auto;
@@ -143,7 +144,6 @@
 }
 
 :host ::ng-deep {
-
   @media only screen and (max-width: 849px) {
     .grid-popup {
       grid-template-columns: 1fr;
@@ -182,10 +182,10 @@
       text-align: center;
     }
     .usercard {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    font-size: 7em;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      font-size: 7em;
     }
     .userstatus {
       display: flex;

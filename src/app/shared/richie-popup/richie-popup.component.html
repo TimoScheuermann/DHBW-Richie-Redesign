@@ -1,7 +1,12 @@
-<div class="popUp" [class.opened]="opened" [class.closed]="!opened">
-  <div class="card">
+<div
+  class="popUp"
+  (tap)="bgClicked()"
+  [class.opened]="opened"
+  [class.closed]="!opened"
+>
+  <div class="card" (tap)="cardClicked()">
     <div class="close" (tap)="_close()"></div>
-    <h1 (swipedown)="_close()">{{ header }}</h1>
+    <h1 (pandown)="_close()">{{ header }}</h1>
     <ng-content></ng-content>
   </div>
 </div>

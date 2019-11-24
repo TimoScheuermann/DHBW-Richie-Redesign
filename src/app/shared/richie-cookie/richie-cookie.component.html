@@ -1,26 +1,35 @@
-<div class="cookies" [@hideCookie]="cookieStyle ? 'open' : 'closed'">
-  <div class="title">Wir schätzen deine Privatsphäre</div>
-  <div class="content">
-    <p>
-      Sie DHBW-Richie.de besuchen, verwenden wir Cookies und andere Methoden, um Ihre
-      personenbezogenen Daten zu verarbeiten und um Inhalte und Ihre Website-Erfahrung zu
-      verbessern.
-    </p>
-    <p>
-      Bitte klicken Sie auf "Akzeptieren", um der Verwendung Ihrer Daten zu zustimmen.
-    </p>
+<richie-popup
+  [opened]="opened"
+  (close)="opened = false"
+  header="Wir schätzen deine Privatsphäre"
+>
+  <div class="hero">
+    <span>
+      <img src="../../../assets/kekse ^^/richie cookies icon.svg" />
+    </span>
+    <span>
+      <img src="../../../assets/kekse ^^/richie cookies text.svg" />
+    </span>
+  </div>
+  <p>
+    Wenn sie DHBW-Richie benutzen, verwenden wir Cookies und andere Methoden, um
+    Ihre personenbezogenen Daten zu verarbeiten und um Inhalte und Ihre
+    Website-Erfahrung zu verbessern.
+  </p>
+  <p>
+    Bitte klicken Sie auf <b>Akzeptieren</b>, um der Verwendung Ihrer Daten zu
+    zustimmen.
+  </p>
+  <p>
+    Weitere Informationen darüber, wie wir Ihre personenbezogenen Daten
+    verarbeiten, finden Sie in unseren
+    <a richie [routerLink]="['legal']" fragment="cookies" (tap)="hide()">
+      Datenschutzbestimmungen</a
+    >.
+  </p>
 
-    <p>
-      Weitere Informationen darüber, wie wir Ihre personenbezogenen Daten verarbeiten,
-      finden Sie in unseren
-      <a [routerLink]="['legal']" fragment="cookies" (click)="hide()"
-        >Datenschutzbestimmungen</a
-      >.
-    </p>
-  </div>
   <div class="buttons">
-    <a [routerLink]="['legal']" fragment="cookies" (click)="hide()">Privacy Policy</a>
-    <div (click)="decline()">Ablehnen</div>
-    <div (click)="accept()">Akzeptieren</div>
+    <div class="iconButton" (tap)="decline()">Ablehnen</div>
+    <div class="iconButton" (tap)="accept()">Akzeptieren</div>
   </div>
-</div>
+</richie-popup>

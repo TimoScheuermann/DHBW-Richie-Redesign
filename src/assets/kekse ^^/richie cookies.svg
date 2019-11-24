@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="70" viewBox="0 0 200 70">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#08f"/>
+      <stop offset="1" stop-color="#0773d2"/>
+    </linearGradient>
+    <filter id="Rechteck_9" x="-4" y="2" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_6" x="27.145" y="31.148" width="84.979" height="84.979" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-richie_cookies">
+      <rect width="200" height="70"/>
+    </clipPath>
+  </defs>
+  <g id="richie_cookies" data-name="richie cookies" clip-path="url(#clip-richie_cookies)">
+    <g id="Gruppe_9" data-name="Gruppe 9" transform="translate(-18 -2)">
+      <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(24 12)">
+        <g transform="matrix(1, 0, 0, 1, -6, -10)" filter="url(#Rechteck_9)">
+          <rect id="Rechteck_9-2" data-name="Rechteck 9" width="50" height="50" rx="11" transform="translate(6 10)" fill="url(#linear-gradient)"/>
+        </g>
+        <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-27.627 9.961)">
+          <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(37.588)">
+            <path id="Pfad_25" data-name="Pfad 25" d="M11.651,0A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" fill="none"/>
+            <path id="Pfad_26" data-name="Pfad 26" d="M11.651,4A7.647,7.647,0,1,0,19.3,11.651,7.656,7.656,0,0,0,11.651,4m0-4A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" transform="translate(0 0)" fill="#fff"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 21.63, -19.96)" filter="url(#Rechteck_6)">
+            <path id="Rechteck_6-2" data-name="Rechteck 6" d="M0,0H10.923A2.477,2.477,0,0,1,13.4,2.477h0a2.477,2.477,0,0,1-2.477,2.477H0Z" transform="translate(36.65 37.15) rotate(45)" fill="rgba(255,255,255,0.5)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Pfad_31" data-name="Pfad 31" d="M9.993.33C14.66.33,17.917-2.36,18.365-6.6H14.489a4.3,4.3,0,0,1-4.482,3.639c-3.045,0-4.957-2.5-4.957-6.565,0-4.008,1.938-6.526,4.944-6.526a4.408,4.408,0,0,1,4.482,3.863h3.876c-.3-4.258-3.784-7.159-8.358-7.159-5.511,0-9,3.7-9,9.835S4.456.33,9.993.33ZM26.974.3c4.271,0,7-2.729,7-7.383,0-4.588-2.769-7.356-7-7.356s-7,2.782-7,7.356C19.973-2.439,22.7.3,26.974.3Zm0-2.94c-1.9,0-3.1-1.6-3.1-4.43,0-2.808,1.226-4.43,3.1-4.43s3.085,1.622,3.085,4.43C30.059-4.232,28.859-2.637,26.974-2.637ZM42.438.3c4.271,0,7-2.729,7-7.383,0-4.588-2.769-7.356-7-7.356s-7,2.782-7,7.356C35.438-2.439,38.167.3,42.438.3Zm0-2.94c-1.9,0-3.1-1.6-3.1-4.43,0-2.808,1.226-4.43,3.1-4.43s3.085,1.622,3.085,4.43C45.523-4.232,44.323-2.637,42.438-2.637ZM55.411-8.464h-.053v-10.56h-3.85V0h3.85V-4.667l1-1.081L60.407,0h4.43L59.181-8.068l5.392-6.064H60.209ZM66.01,0h3.85V-14.133H66.01Zm1.925-15.688a2,2,0,0,0,2.057-1.991,2,2,0,0,0-2.057-1.991,2,2,0,0,0-2.057,1.991A2,2,0,0,0,67.935-15.688Zm10.824,4.1a2.933,2.933,0,0,1,2.966,3.045h-6A3.06,3.06,0,0,1,78.759-11.588Zm3.019,7.264a2.813,2.813,0,0,1-2.848,1.78,3.144,3.144,0,0,1-3.243-3.4v-.237H85.43V-7.356c0-4.3-2.6-7.08-6.71-7.08C74.54-14.436,71.9-11.509,71.9-7S74.514.3,78.864.3c3.494,0,6.025-1.859,6.447-4.627ZM87.17-9.98c0,2.083,1.371,3.48,4.047,4.087l2.61.58c1.266.3,1.74.7,1.74,1.411,0,.923-.883,1.5-2.347,1.5-1.529,0-2.465-.686-2.65-1.872H86.814C87.025-1.516,89.345.3,93.116.3,96.847.3,99.4-1.529,99.4-4.311c0-2.109-1.147-3.23-3.981-3.863l-2.7-.58c-1.239-.29-1.846-.765-1.846-1.463,0-.91.87-1.516,2.2-1.516,1.424,0,2.333.7,2.413,1.833h3.546c-.053-2.742-2.36-4.535-5.906-4.535C89.5-14.436,87.17-12.669,87.17-9.98Z" transform="translate(94 45)" fill="rgba(0,0,0,0.66)"/>
+    <path id="Vereinigungsmenge_2" data-name="Vereinigungsmenge 2" d="M-1866.5,88.5v-12h-12A1.5,1.5,0,0,1-1880,75a1.5,1.5,0,0,1,1.5-1.5h12v-12A1.5,1.5,0,0,1-1865,60a1.5,1.5,0,0,1,1.5,1.5v12h12A1.5,1.5,0,0,1-1850,75a1.5,1.5,0,0,1-1.5,1.5h-12v12A1.5,1.5,0,0,1-1865,90,1.5,1.5,0,0,1-1866.5,88.5Z" transform="translate(1447.288 1300.721) rotate(45)" fill="rgba(0,0,0,0.33)"/>
+  </g>
+</svg>

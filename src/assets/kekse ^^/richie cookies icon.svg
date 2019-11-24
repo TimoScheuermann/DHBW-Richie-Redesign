@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#08f"/>
+      <stop offset="1" stop-color="#0773d2"/>
+    </linearGradient>
+    <filter id="Rechteck_9" x="-3" y="-1" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_6" x="28.145" y="28.148" width="84.979" height="84.979" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-richie_cookies_icon">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="richie_cookies_icon" data-name="richie cookies icon" clip-path="url(#clip-richie_cookies_icon)">
+    <g id="Gruppe_9" data-name="Gruppe 9" transform="translate(-17 -5)">
+      <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(24 12)">
+        <g transform="matrix(1, 0, 0, 1, -7, -7)" filter="url(#Rechteck_9)">
+          <rect id="Rechteck_9-2" data-name="Rechteck 9" width="50" height="50" rx="11" transform="translate(7 7)" fill="url(#linear-gradient)"/>
+        </g>
+        <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-27.627 9.961)">
+          <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(37.588)">
+            <path id="Pfad_25" data-name="Pfad 25" d="M11.651,0A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" fill="none"/>
+            <path id="Pfad_26" data-name="Pfad 26" d="M11.651,4A7.647,7.647,0,1,0,19.3,11.651,7.656,7.656,0,0,0,11.651,4m0-4A11.651,11.651,0,1,1,0,11.651,11.651,11.651,0,0,1,11.651,0Z" transform="translate(0 0)" fill="#fff"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, 20.63, -16.96)" filter="url(#Rechteck_6)">
+            <path id="Rechteck_6-2" data-name="Rechteck 6" d="M0,0H10.923A2.477,2.477,0,0,1,13.4,2.477h0a2.477,2.477,0,0,1-2.477,2.477H0Z" transform="translate(37.65 34.15) rotate(45)" fill="rgba(255,255,255,0.5)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
