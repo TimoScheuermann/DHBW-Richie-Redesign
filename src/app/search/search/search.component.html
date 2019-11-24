@@ -10,15 +10,42 @@
 <div class="seperator specialSeperator">
   <h2>Filter</h2>
   <div class="filterList">
-    <div class="filter">Vorlesung <i class="ti ti-list"></i></div>
-    <div class="filter">Vorlesung <i class="ti ti-list"></i></div>
-    <div class="filter">Vorlesung <i class="ti ti-list"></i></div>
-    <div class="filter">Vorlesung <i class="ti ti-list"></i></div>
+    <div class="filter">
+      Vorlesung<i class="ti-list"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span><span class="path4"></span
+        ><span class="path5"></span><span class="path6"></span
+      ></i>
+    </div>
+    <div class="filter">
+      Vorlesung<i class="ti-list"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span><span class="path4"></span
+        ><span class="path5"></span><span class="path6"></span
+      ></i>
+    </div>
+    <div class="filter">
+      Vorlesung<i class="ti-list"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span><span class="path4"></span
+        ><span class="path5"></span><span class="path6"></span
+      ></i>
+    </div>
+    <div class="filter">
+      Vorlesung<i class="ti-list"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span><span class="path4"></span
+        ><span class="path5"></span><span class="path6"></span
+      ></i>
+    </div>
   </div>
 </div>
 
 <div class="results">
-  <div class="result">
+  <div
+    *ngFor="let in of [0, 0, 0, 0, 0, 0, 0, 0, 0]; let i = index"
+    class="result"
+  >
     <div class="question">Was ist die Antwort auf alles?</div>
     <div class="answer">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
@@ -33,115 +60,11 @@
       <div class="action green"><i class="ti ti-like"></i>137</div>
       <div class="action red"><i class="ti ti-dislike"></i>65</div>
       <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
-    </div>
-  </div>
-  <div class="result">
-    <div class="question">Was ist die Antwort auf alles?</div>
-    <div class="answer">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia
-      aut nemo consectetur. Ea mollitia totam modi repudiandae dignissimos id
-      deleniti atque laborum tempore deserunt dicta, pariatur harum commodi
-      aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Explicabo vero tempora, dolorum dolore aperiam maiores sequi, ratione
-      architecto iste corrupti officia suscipit sit voluptates quae dolor hic
-      doloribus esse ducimus.
-    </div>
-    <div class="actions">
-      <div class="action green"><i class="ti ti-like"></i>137</div>
-      <div class="action red"><i class="ti ti-dislike"></i>65</div>
-      <div class="action blue"><i class="ti ti-feedback"></i>Feedback</div>
-      <div class="action"><i class="ti ti-share"></i>Vergrößern</div>
+      <div class="action">
+        <i class="ti-share"
+          ><span class="path1"></span><span class="path2"></span></i
+        >Vergrößern
+      </div>
     </div>
   </div>
 </div>

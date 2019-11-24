@@ -47,6 +47,20 @@ body {
   position: relative;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+i[class^="ti-"] {
+  * {
+    &::before {
+      color: inherit !important;
+    }
+  }
+}
+
 h1 {
   text-align: center;
 }
@@ -417,16 +431,20 @@ form {
 @media only screen and (max-width: 849px) {
   .results {
     columns: 1;
+    padding: 0px;
+    padding-left: var(--safe-area-inset-left);
+    padding-right: var(--safe-area-inset-right);
+    padding-bottom: var(--safe-area-inset-bottom);
   }
 }
 @media only screen and (min-width: 850px) {
   .results {
     columns: 2;
+    padding: 0px 10%;
   }
 }
 
 .results {
-  padding: 0px 10%;
   display: block;
   column-gap: 20px;
   margin: 20px 0px;
@@ -466,6 +484,11 @@ form {
         transition: 0.2s ease;
         &:hover {
           opacity: 1;
+        }
+        &:not(:nth-child(2)) {
+          i {
+            padding-right: 5px;
+          }
         }
         &:nth-child(4) {
           color: rgba(var(--color), 0.5);
@@ -544,7 +567,6 @@ textarea {
   z-index: 1;
 }
 
-
 @media only screen and (min-width: 850px) {
   .iconButton {
     color: $blue;
@@ -608,12 +630,12 @@ textarea {
   &:not(:last-child) {
     margin-right: 20px;
   }
-  
+
   &:active {
     filter: brightness(120%);
   }
 
-&::before {
+  &::before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -634,7 +656,6 @@ textarea {
       border-radius: 0px;
     }
   }
-
 }
 
 .red {
