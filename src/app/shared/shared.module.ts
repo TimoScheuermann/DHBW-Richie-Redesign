@@ -14,6 +14,7 @@ import { RichieNavbarComponent } from "./richie-navbar/richie-navbar.component";
 import { RichieRouteSmallComponent } from "./richie-navbar/richie-route-small/richie-route-small.component";
 import { RichieRouteComponent } from "./richie-navbar/richie-route/richie-route.component";
 import { RichiePopupComponent } from "./richie-popup/richie-popup.component";
+import { RichiePwaNotifierComponent } from "./richie-pwa-notifier/richie-pwa-notifier.component";
 import { RichieQuestionComponent } from "./richie-question/richie-question.component";
 import { RichieRevealerComponent } from "./richie-revealer/richie-revealer.component";
 import { RichieSelectComponent } from "./richie-select/richie-select.component";
@@ -42,7 +43,8 @@ import { UserService } from "./user.service";
     RichieQuestionComponent,
     ClickOutsideDirective,
     RichieCookieComponent,
-    RichiePopupComponent
+    RichiePopupComponent,
+    RichiePwaNotifierComponent
   ],
   imports: [CommonModule, RouterModule, FormsModule],
   providers: [NotificationService, UserService],
@@ -63,7 +65,8 @@ import { UserService } from "./user.service";
     RichieQuestionComponent,
     ClickOutsideDirective,
     RichieCookieComponent,
-    RichiePopupComponent
+    RichiePopupComponent,
+    RichiePwaNotifierComponent
   ]
 })
 export class SharedModule {
