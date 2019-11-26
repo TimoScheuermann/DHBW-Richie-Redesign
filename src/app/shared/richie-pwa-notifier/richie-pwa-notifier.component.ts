@@ -7,7 +7,8 @@ import { Component } from "@angular/core";
 })
 export class RichiePwaNotifierComponent {
   constructor() {
-    this.opened = !this.isInStandaloneMode();
+    // TODO: readd
+    // this.opened = !this.isInStandaloneMode();
   }
 
   public opened: boolean = false;
