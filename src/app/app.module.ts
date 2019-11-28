@@ -31,7 +31,7 @@ Hammer.defaults.domEvents = true;
 @Injectable()
 export class RichieHammerConfig extends HammerGestureConfig {
   overrides = <any>{
-    pan: { direction: Hammer.DIRECTION_ALL },
+    // pan: { direction: Hammer.DIRECTION_ALL },
     swipe: { direction: Hammer.DIRECTION_ALL }
   };
   // buildHammer(element: HTMLElement) {
