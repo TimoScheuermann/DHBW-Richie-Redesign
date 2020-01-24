@@ -1,25 +1,42 @@
 <nav [class.opened]="isNavVisible">
-  <div class="menu" (click)="toggleNav()"><i class="ti ti-arrow"></i>Menü</div>
+  <div class="menu" (click)="toggleNav()"><i class="ti ti-arrow"></i>Home</div>
   <div class="title">DHBW Richie</div>
   <div class="links">
-    <i class="ti-home"><span class="path1"></span><span class="path2"></span></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/home']">Home</a>
-    <i class="ti-add"><span class="path1"></span><span class="path2"></span></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/add']">Add</a>
-    <i class="ti-review"
-      ><span class="path1"></span><span class="path2"></span></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/review']">Review</a>
-    <i class="ti-search"
-      ><span class="path1"></span><span class="path2"></span></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/search']">Suche</a>
-    <i class="ti ti-telegram"></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/telegram']">Telegram</a>
-    <i class="ti-admin"
-      ><span class="path1"></span><span class="path2"></span
-      ><span class="path3"></span></i
-    ><a [routerLinkActive]="'active'" [routerLink]="['/admin']"
-      >Administration</a
-    >
+    <div class="link">
+      <i class="ti-home"
+        ><span class="path1"></span><span class="path2"></span></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/home']">Home</a>
+    </div>
+
+    <div class="link">
+      <i class="ti-add"
+        ><span class="path1"></span><span class="path2"></span></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/add']">Add</a>
+    </div>
+    <div class="link">
+      <i class="ti-review"
+        ><span class="path1"></span><span class="path2"></span></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/review']">Review</a>
+    </div>
+    <div class="link">
+      <i class="ti-search"
+        ><span class="path1"></span><span class="path2"></span></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/search']">Suche</a>
+    </div>
+    <div class="link">
+      <i class="ti ti-telegram"></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/telegram']"
+        >Telegram</a
+      >
+    </div>
+    <div class="link">
+      <i class="ti-admin"
+        ><span class="path1"></span><span class="path2"></span
+        ><span class="path3"></span></i
+      ><a [routerLinkActive]="'active'" [routerLink]="['/admin']"
+        >Administration</a
+      >
+    </div>
   </div>
   <div [routerLink]="['/settings']" class="user">
     <div class="name">Max Mustermann</div>

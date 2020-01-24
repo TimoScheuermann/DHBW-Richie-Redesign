@@ -1,13 +1,8 @@
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { APP_INITIALIZER, Injectable, NgModule } from "@angular/core";
-import {
-  BrowserModule,
-  HammerGestureConfig,
-  HAMMER_GESTURE_CONFIG
-} from "@angular/platform-browser";
+import { APP_INITIALIZER, NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ServiceWorkerModule } from "@angular/service-worker";
-import * as Hammer from "hammerjs";
 import { environment } from "../environments/environment";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -26,21 +21,21 @@ export function checkAuth(userService: UserService) {
   return () => userService.checkToken();
 }
 
-Hammer.defaults.domEvents = true;
+// Hammer.defaults.domEvents = true;
 
-@Injectable()
-export class RichieHammerConfig extends HammerGestureConfig {
-  overrides = <any>{
-    // pan: { direction: Hammer.DIRECTION_ALL },
-    swipe: { direction: Hammer.DIRECTION_ALL }
-  };
-  // buildHammer(element: HTMLElement) {
-  //   let mc = new Hammer(element, {
-  //     touchAction: "auto"
-  //   });
-  //   return mc;
-  // }
-}
+// @Injectable()
+// export class RichieHammerConfig extends HammerGestureConfig {
+//   overrides = <any>{
+// pan: { direction: Hammer.DIRECTION_ALL },
+//   swipe: { direction: Hammer.DIRECTION_ALL }
+// };
+// buildHammer(element: HTMLElement) {
+//   let mc = new Hammer(element, {
+//     touchAction: "auto"
+//   });
+//   return mc;
+// }
+// }
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],
@@ -72,11 +67,11 @@ export class RichieHammerConfig extends HammerGestureConfig {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    },
-    {
-      provide: HAMMER_GESTURE_CONFIG,
-      useClass: RichieHammerConfig
     }
+    // {
+    //   provide: HAMMER_GESTURE_CONFIG,
+    //   useClass: RichieHammerConfig
+    // }
   ],
   bootstrap: [AppComponent]
 })
